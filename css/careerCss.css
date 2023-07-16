@@ -1,0 +1,140 @@
+.contentBox{
+    height: 90vh;
+    margin: 0;
+}
+i{
+    margin-left: 5px;
+}
+#title{
+    color: white;
+    text-align: center;
+    font-family: Lato;
+    text-transform: uppercase;
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes glow {
+    50%{
+        text-shadow: 2px 2px 2px #ff008e , 2px 2px 2px #f00b51,  2px 2px 2px #fd02d3;
+    }
+    100%{
+        text-shadow:  2px 2px 2px #ffc000,  2px 2px 2px #f35322,  2px 2px 2px #fdc100;
+    }
+}
+form{
+    color: white;
+    font-weight: bold;
+    margin: 2%;
+
+}
+textarea{
+    margin-top: 1%;
+    resize: none;
+    color: white;
+    font-size: 15px;
+    border: 4px solid;
+    border-image: linear-gradient(to left, #ffc000 0%, #f35322 31%, #fdc100 100%) 1;
+    background-color: rgba(105, 105, 105, 0.81);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+label{
+    font-size: 15px;
+    margin-left: 10%;
+}
+.genInfo{
+    background-color: rgba(105, 105, 105, 0.81);
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+}
+.buttons{
+    font-size: 15px;
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+#file{
+    font-size: 15px;
+    text-align: center;
+
+    cursor: pointer;
+}
+#file::file-selector-button{
+    border: 2px solid;
+    border-image: linear-gradient(to left, #ffc000 0%, #f35322 31%, #fdc100 100%) 1;
+    padding: .2em .4em;
+    border-radius: .2em;
+    background-image: linear-gradient(to left, #ffc000 0%, #f35322 31%, #fdc100 100%);
+    transition: 1s;
+    color: white;
+}
+
+
+#submit{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    border-image: linear-gradient(to left, #ffc000 0%, #f35322 31%, #fdc100 100%) 1;
+    cursor: pointer;
+    position:relative;
+    overflow: hidden;
+    background-image: linear-gradient(to left, #ffc000 0%, #f35322 31%, #fdc100 100%);
+    margin-top: 1%;
+    padding-left: 1%;
+
+}
+#reset{
+    font-size: 15px;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    border-image: linear-gradient(to left, #ffc000 0%, #f35322 31%, #fdc100 100%) 1;
+    cursor: pointer;
+    position:relative;
+    overflow: hidden;
+    background-image: linear-gradient(to left, #ffc000 0%, #f35322 31%, #fdc100 100%);
+    margin-top: 1%;
+
+}
+.arrange{
+    margin-left: 10%;
+}
+#denumire{
+    float: left;
+    display: block;
+    border: 2px solid transparent;
+    display: inline-block;
+    margin-top: 0.5%;
+
+}
+
+#mr{
+    display: inline-block;
+    margin-left:1%;
+    margin-top: 0.5%;
+}
+#ms{
+    margin-left: 1%;
+    margin-top: 0.5%;
+}
+#poz{
+    margin-left: 14%;
+}
+#neg{
+    margin-left: 14%;
+}
+#fs,#ln, #emaill, #phonee, #bdayy {
+  margin-right: 1%;
+    margin-top:0.5% ;
+    display: inline-block;
+    width: 100px;
+}

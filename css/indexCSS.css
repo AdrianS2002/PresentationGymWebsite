@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Light", 'Lato' ;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url("../images/gymbg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+i{
+    margin-left: 5px;
+}
+
+.navbar{
+
+    width:90%;
+    margin:auto;
+    padding: 2px 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    font-weight: bold;
+    list-style:none;
+    display: inline-block;
+    margin: 0 20px;
+    position:relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #d56210;
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    transition: 0.5s ;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    text-align: center;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: white;
+}
+#memberBtn{
+    width: 300px;
+    font-weight: bold;
+    padding: 15px 0;
+    line-height: 25px;
+    font-size: 20px;
+    text-align: center;
+    margin: 80px 10px;
+    background-color:transparent ;
+    color: white;
+    border-image: linear-gradient(to left, #ffc000 0%, #f35322 31%, #fdc100 100%) 1;
+    cursor: pointer;
+    position:relative;
+    overflow: hidden;
+}
+#text{
+    margin:25px auto;
+    font-weight: bold;
+    line-height: 25px;
+}
+#slogan{
+
+    background-color:red;
+    background-image:linear-gradient(to left, #ff008e 35%,  #f00b51 100%, #fd02d3 80% );
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: unset;
+
+}
+span{
+    background-image:linear-gradient(to left, #ffc000 0%, #f35322 31%, #fdc100 100%);
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+#memberBtn:hover span{
+    width: 100%;
+
+}
+.fa-user-plus {
+    padding-right: 20px;
+}

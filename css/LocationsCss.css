@@ -1,0 +1,33 @@
+iframe{
+    margin-top: 0;
+    height: 550px;
+    width: 750px;
+    border: 4px solid;
+    border-image: linear-gradient(to left, #ffc000 0%, #f35322 31%, #fdc100 100%) 1;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    transform: translateY(10%);
+}
+i{
+    margin-left: 5px;
+}
+h1{
+    margin-top: 15px;
+    color: white;
+    size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes glow {
+    50%{
+        text-shadow: 2px 2px 2px #ff008e , 2px 2px 2px #f00b51,  2px 2px 2px #fd02d3;
+    }
+    100%{
+        text-shadow:  2px 2px 2px #ffc000,  2px 2px 2px #f35322,  2px 2px 2px #fdc100;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Make a career at Muscle Gym</title>
+    <link rel="stylesheet" href="../css/indexCSS.css">
+    <link rel="stylesheet" href="../css/careerCss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <script src="https://kit.fontawesome.com/dea851747b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="banner">
+
+        <div class ="navbar">
+            <a href="index.html"><img src="../images/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="Locations.html">Locations</a></li>
+                <li><a href="PersonalTrainers.html">Personal trainers</a></li>
+                <li><a href="Career.html">Career</a></li>
+                <li><a href="Membership.html">Membership</a></li>
+                <li><a href="login.html">Login <i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i></a> </li>
+            </ul>
+        </div>
+
+        <div class="contentBox" id="main">
+            <h1 id="title">Join our team </h1>
+            <form action="submit.php" method="POST">
+
+                <label for="LastName" id="ln">Last Name:</label>
+                <input type="text" id="LastName" class="genInfo" placeholder="Smith" required> <br>
+
+                <label for="FirstName" id="fs">First Name:</label>
+                <input type="text" id="FirstName" placeholder="Jhon" class="genInfo" required> <br>
+
+                <lable for="email" id="emaill" class="arrange">email:</lable>
+                <input type="email" id="email"  class="genInfo" placeholder="JSmith@gmail.com" required> <br>
+
+                <lable for="phone" id="phonee" class="arrange">Phone:</lable>
+                <input type="tel" id="phone" class="genInfo" placeholder="0748596456" pattern="[0-9]{10}" required> <br>
+
+                <lable for="bday" id="bdayy" class="arrange">Birthdate</lable>
+                <input type="date" id="bday" class="genInfo"> <br>
+
+                <lable for="Title"class="arrange" id="denumire">Title:</lable>
+
+                <div id="radBut">
+                    <lable for="Mr" id="mr">Mr.</lable>
+                    <input type="radio" id="Mr." value="Mr." name="title"><br>
+                    <lable for="Ms" id="ms">Ms.</lable>
+                    <input type="radio" id="Ms." value="Ms." name="title"><br>
+                </div>
+
+
+                <lable for="workbefore" class="arrange">Have you ever work as a personal trainer? </lable> <br>
+                <label for="yes" id="poz" >YES</label>
+                <input type="radio" id="yes" value="yes" name="workbefore"> <br>
+                <label for="no" id="neg">NO</label>
+                <input type="radio" id="no" value="no" name="workbefore"> <br>
+
+                <label for="description">What recommends you for this job?</label><br>
+                <textarea id="description" required  rows="13" cols="150" placeholder="Enter text here"></textarea><br>
+                <label for="file">Upload your resume:</label>
+                <input type="file" id="file" required><br>
+                <div class="buttons">
+                   <input type="reset"  class="buttons" id="reset" >
+                    <input type="submit" class="buttons" id="submit">
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
